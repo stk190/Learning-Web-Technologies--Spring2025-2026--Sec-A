@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Form</title>
+    <script src="Lab7.2_script.js"></script>
+</head>
+<body>
+
+<h1 align="center">Person Profile</h1>
+
+<form onsubmit="return validateForm()">
+
+<h3>Name</h3>
+<input type="text" id="name">
+<hr>
+
+<h3>Email</h3>
+<input type="text" id="email">
+<hr>
+
+<h3>Gender</h3>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+<hr>
+
+<h3>Date of Birth</h3>
+DD <input type="text" id="dd" size="2" maxlength="2">
+MM <input type="text" id="mm" size="2" maxlength="2">
+YYYY <input type="text" id="yyyy" size="4" maxlength="4">
+<hr>
+
+<h3>Degree</h3>
+<input type="radio" name="degree" value="SSC"> SSC
+<input type="radio" name="degree" value="HSC"> HSC
+<input type="radio" name="degree" value="BSc"> BSc
+<input type="radio" name="degree" value="MSc"> MSc
+<hr>
+
+<h3>Blood Group</h3>
+<select id="blood">
+    <option value="">--Select--</option>
+    <option>A+</option>
+    <option>A-</option>
+    <option>B+</option>
+    <option>B-</option>
+    <option>O+</option>
+    <option>O-</option>
+    <option>AB+</option>
+    <option>AB-</option>
+</select>
+<hr>
+
+<h3>Profile Picture</h3>
+User ID: <input type="text" id="userid"><br><br>
+Picture: <input type="file" id="picture">
+<hr>
+
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
